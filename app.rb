@@ -3,7 +3,6 @@ require 'sinatra/reloader'
 
 class RPS < Sinatra::Base
   enable :sessions
-
   configure :development do
     register Sinatra::Reloader
   end

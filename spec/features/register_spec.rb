@@ -9,5 +9,7 @@ feature 'register name' do
     fill_in :name, with: 'Max'
     click_button 'Submit'
     expect(page).to have_content 'Max'
+    save_and_open_page
+    expect(page).to have_content 'Max'
   end
 end
