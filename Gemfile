@@ -7,6 +7,8 @@ gem 'sinatra-contrib'
 gem 'webrick'
 gem 'selenium-webdriver'
 
+gem 'launchy'
+
 group :test do
   gem 'capybara'
   gem 'rspec'

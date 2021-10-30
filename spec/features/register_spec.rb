@@ -4,10 +4,10 @@
 # require 'spec_helper'
 
 feature 'register name' do
-    scenario 'register user' do
-      visit ('/')
-      fill_in :name, with: 'Max'
-      click_button 'Submit'
-      expect(page).to have_content 'Max'
-    end
+  scenario 'register users name' do
+    visit ('/')
+    fill_in :name, with: 'Max'
+    click_button 'Submit'
+    expect(page).to have_content 'Max'
   end
+end
